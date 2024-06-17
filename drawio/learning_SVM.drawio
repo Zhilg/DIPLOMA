@@ -1,0 +1,77 @@
+<mxfile host="65bd71144e">
+    <diagram id="ObUzt4dJQUFrYTSsKs7V" name="Page-1">
+        <mxGraphModel dx="1617" dy="865" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=17;" parent="1" source="3" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="430" y="160" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="3" value="Начало" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fontSize=17;" parent="1" vertex="1">
+                    <mxGeometry x="240" y="70" width="380" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=17;" parent="1" target="39" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="430" y="335" as="targetPoint"/>
+                        <mxPoint x="430" y="310" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="6" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=17;" parent="1" source="39" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="430" y="390" as="sourcePoint"/>
+                        <mxPoint x="430" y="440" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="13" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=17;" parent="1" source="40" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="430" y="540" as="targetPoint"/>
+                        <mxPoint x="430" y="480" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="37" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="510" y="620" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="38" value="x, y = train_feature_vector, train_labels&lt;br style=&quot;font-size: 17px;&quot;&gt;classes = уникальные элементы массива y n_classes = количество классов" style="rounded=0;whiteSpace=wrap;html=1;fontSize=17;" parent="1" vertex="1">
+                    <mxGeometry x="240" y="250" width="380" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" value="_, n_features = X.shape" style="rounded=0;whiteSpace=wrap;html=1;fontSize=17;" parent="1" vertex="1">
+                    <mxGeometry x="240" y="340" width="380" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="bias = np.zeros(n_classes)&lt;br style=&quot;font-size: 17px;&quot;&gt;weights = np.zeros((n_classes, n_features))&lt;br style=&quot;font-size: 17px;&quot;&gt;np.random.seed(self.random_state)" style="rounded=0;whiteSpace=wrap;html=1;fontSize=17;" parent="1" vertex="1">
+                    <mxGeometry x="240" y="440" width="380" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=17;" parent="1" source="42" target="43" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="цикл по i, cls в enumerate(classes)" style="shape=loopLimit;whiteSpace=wrap;html=1;fontSize=17;" parent="1" vertex="1">
+                    <mxGeometry x="240" y="540" width="380" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=17;" parent="1" source="43" target="45" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" value="y_binary = np.where(y == cls, 1, -1)&lt;br style=&quot;font-size: 17px;&quot;&gt;bias[i], weights[i] = _find_weights(X,y_binary)" style="rounded=0;whiteSpace=wrap;html=1;fontSize=17;" parent="1" vertex="1">
+                    <mxGeometry x="240" y="620" width="380" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=17;" parent="1" source="45" target="47" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" value="Конец цикла по i, cls" style="shape=loopLimit;whiteSpace=wrap;html=1;flipV=1;fontSize=17;" parent="1" vertex="1">
+                    <mxGeometry x="240" y="720" width="380" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="Конец" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fontSize=17;" parent="1" vertex="1">
+                    <mxGeometry x="240" y="800" width="380" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=17;" parent="1" source="49" target="38" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="49" value="train_feature_vector - матрица извлеченных признаков&lt;br style=&quot;font-size: 17px;&quot;&gt;train_labels - вектор меток сообщений" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontSize=17;" parent="1" vertex="1">
+                    <mxGeometry x="240" y="160" width="380" height="60" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

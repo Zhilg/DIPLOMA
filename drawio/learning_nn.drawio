@@ -1,0 +1,144 @@
+<mxfile host="65bd71144e">
+    <diagram id="AMXRYdehB9pGlyNivmly" name="Page-1">
+        <mxGraphModel dx="1752" dy="937" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="900" pageHeight="1600" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="34" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=16;" parent="1" target="4" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="480" y="240" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="101" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=16;" parent="1" source="2" target="100" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="Начало" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fontSize=16;" parent="1" vertex="1">
+                    <mxGeometry x="290" y="70" width="380" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=16;" parent="1" source="4" target="79" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="480" y="370" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="4" value="x,y = train_feature_vector, train_labels" style="rounded=0;whiteSpace=wrap;html=1;align=center;fontSize=16;" parent="1" vertex="1">
+                    <mxGeometry x="290" y="280" width="380" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=16;" parent="1" target="13" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="480" y="420" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="38" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=16;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1080" y="150" as="sourcePoint"/>
+                        <mxPoint x="1080" y="180" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="37" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=16;" parent="1" source="13" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="480" y="540" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="13" value="self.n_outputs_ = y.shape[1]" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
+                    <mxGeometry x="290" y="450" width="380" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" value="Конец" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fontSize=16;" parent="1" vertex="1">
+                    <mxGeometry x="890" y="940" width="380" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="79" value="nn_model = MLPClassifier(&lt;br style=&quot;font-size: 16px;&quot;&gt;hidden_layer_sizes=(100,100),&amp;nbsp;activation='relu',&lt;br style=&quot;font-size: 16px;&quot;&gt;max_iter=100)" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
+                    <mxGeometry x="290" y="365" width="380" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="105" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=22;" edge="1" parent="1" source="80" target="104">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="80" value="layer_units = [n_features] + hidden_layer_sizes + [self.n_outputs_]" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
+                    <mxGeometry x="290" y="540" width="380" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="83" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=16;" parent="1" source="82" target="94" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="939.9999999999999" y="340" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="880" y="250"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="84" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=16;" parent="1" source="82" target="85" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1210" y="340" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="1310" y="250"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="82" value="Первый&amp;nbsp;&lt;br style=&quot;font-size: 16px;&quot;&gt;прогон?" style="rhombus;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
+                    <mxGeometry x="1005" y="180" width="150" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="90" style="edgeStyle=none;rounded=0;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=16;" parent="1" source="85" target="86" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="85" value="self.n_iter_ = 0&lt;br style=&quot;font-size: 16px;&quot;&gt;self.t_ = 0&lt;br style=&quot;font-size: 16px;&quot;&gt;self.n_outputs_ = y.shape[1]&lt;br style=&quot;font-size: 16px;&quot;&gt;self.n_layers_ = len(layer_units)" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
+                    <mxGeometry x="1170" y="345" width="280" height="85" as="geometry"/>
+                </mxCell>
+                <mxCell id="91" style="edgeStyle=none;rounded=0;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=16;" parent="1" source="86" target="87" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="86" value="Цикл для i от 0 до self.n_layers_ - 1 с шагом 1" style="shape=loopLimit;whiteSpace=wrap;html=1;size=20;fontSize=16;" parent="1" vertex="1">
+                    <mxGeometry x="1170" y="460" width="280" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="92" style="edgeStyle=none;rounded=0;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=16;" parent="1" source="87" target="88" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="87" value="coef_init, intercept_init = self._init_coef(layer_units[i], layer_units[i+1])&lt;br style=&quot;font-size: 16px;&quot;&gt;self.coefs_.append(coef_init)&lt;br style=&quot;font-size: 16px;&quot;&gt;self.intercepts_.append(intercept_init)" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
+                    <mxGeometry x="1170" y="570" width="280" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="98" style="edgeStyle=none;rounded=0;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=16;" parent="1" source="88" target="56" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1310" y="860"/>
+                            <mxPoint x="1080" y="860"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="88" value="Конец цикла по i" style="shape=loopLimit;whiteSpace=wrap;html=1;flipV=1;size=20;fontSize=16;" parent="1" vertex="1">
+                    <mxGeometry x="1170" y="710" width="280" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="89" value="Да" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
+                    <mxGeometry x="1120" y="190" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="97" style="edgeStyle=none;rounded=0;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=16;" parent="1" source="94" target="96" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="103" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=16;" edge="1" parent="1" source="94" target="102">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="94" value="activations = [X] + [None] * (len(layer_units) -1)&lt;br style=&quot;font-size: 16px;&quot;&gt;deltas = [None] * (len(activations) - 1)&lt;br style=&quot;font-size: 16px;&quot;&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
+                    <mxGeometry x="710" y="345" width="340" height="115" as="geometry"/>
+                </mxCell>
+                <mxCell id="99" style="edgeStyle=none;rounded=0;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=16;" parent="1" source="96" target="56" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1110" y="940" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="880" y="860"/>
+                            <mxPoint x="1080" y="860"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="96" value="Запуск функции минимизации скалярной функции нескольких аргументов,&lt;br style=&quot;font-size: 16px;&quot;&gt;args = (X, y, activations, deltas, coef_grads, intercept_grads)" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
+                    <mxGeometry x="710" y="650" width="340" height="115" as="geometry"/>
+                </mxCell>
+                <mxCell id="100" value="train_feature_vector - матрица извлеченных признаков&lt;br style=&quot;font-size: 16px;&quot;&gt;train_labels - вектор меток сообщений" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontSize=16;" parent="1" vertex="1">
+                    <mxGeometry x="290" y="180" width="380" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="102" value="coef_grads = [np.empty(n_fan_in_, n_fan_out_)&lt;br style=&quot;font-size: 16px;&quot;&gt;for n_fan_in_, n_fan_out in zip(layer_units[:-1], layer_units[1:])]&lt;br style=&quot;font-size: 16px;&quot;&gt;intercept_grads = [np.empty(n_fan_out_) for n_fan_out_ in layer_units[1:]]" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+                    <mxGeometry x="710" y="500" width="340" height="115" as="geometry"/>
+                </mxCell>
+                <mxCell id="104" value="А" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontSize=22;" vertex="1" parent="1">
+                    <mxGeometry x="440" y="630" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="106" value="А" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontSize=22;" vertex="1" parent="1">
+                    <mxGeometry x="1040" y="70" width="80" height="80" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
